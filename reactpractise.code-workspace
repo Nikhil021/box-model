@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../reactpractise"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "BoxModel"
+	}
+}

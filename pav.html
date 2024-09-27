@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .home{
+            min-width: 100vh;
+            display: flex;
+            align-items: centre;
+            background: url(./media/coffee.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        section{
+            padding: 2rem 7%;
+        }
+
+        .heading{
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            padding-bottom: 3.5rem;
+            font: size 4rem;
+        }
+
+        .heading span{
+            color: var(--main-color);
+            text-transform: uppercase;
+        }
+
+        .home .content p{
+            font-size: 2rem;
+            font-weight: lighter;
+            line-height: 1.8;
+            padding: 1rem 0;
+            color: #eee; 
+        }
+
+        .home{
+            background-position: left;
+            justify-content: center;
+        }
+
+        .home .content h3{
+            font-size: 4.5rem;
+        }
+
+        .home .content p{
+            font-size: 1.5rem;
+        }
+
+        .about .row{
+            display: flex;
+            align-items: center;
+            background-color: var(--black);
+            flex-wrap: wrap;
+        }
+
+        .about .row .image{
+            flex:1 1 45rem;
+        }
+
+        .about .row .image img{
+            width: 100%;
+        }
+
+        .about .row .content{
+            flex:1 1 45rem;
+            padding: 2rem;
+        }
+
+        .about .row .content h3{
+            font-size: 3rem;
+            color: #fff;  
+        }
+        
+        .about .row .content p{
+            font-size: 1.6rem;
+            color: #ccc;
+            padding: 1rem 0; 
+            line-height: 1.8; 
+        }
+        .menu .box-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+            gap:1.5rem;
+        }
+
+        .menu .box-container .box {
+            padding: 5rem;
+            text-align: center;
+            border: var(--border);
+        } 
+        
+        .menu .box-container .box img{
+            height: 10rem;
+        }
+
+        .menu .box-container .box h3{
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+
+        .menu .box-container .box h3{
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem 0;
+        }
+
+        .menu .box-container .box .price{
+            color: #fff;
+            font-size: 2.5rem;
+            padding: 5rem 0;
+        }
+
+        .menu .box-container .box .price span{
+            color: #fff;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+        }
+
+        .menu .box-container .box:hover{
+            background-color: #fff;
+        }
+
+        .menu .box-container .box:hover > *{
+            background-color:var(--black);
+        }
+    </style>
+</head>
+<body>
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Fresh coffee in the Morning</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est consequatur eaque quos, dicta, incidunt eligendi corporis repellendus laudantium expedita vero accusantium nemo maiores praesentium exercitationem quia optio sapiente facilis atque?</p>
+            <a href="#" class="btn">Get yours now</a>
+        </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+        <h1 class="heading"><span>about</span> us</h1>
+
+        <div class="image">
+            <img src="./media/coffee1.jpg" alt="">
+        </div>
+
+        <div class="content">
+            <h3>what makes our coffee special?</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil sit laudantium voluptatibus, tempora laboriosam quibusdam repellendus minima necessitatibus quos reiciendis nobis. Vero, mollitia atque eligendi tempore quisquam facilis culpa blanditiis.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga deleniti sapiente ipsa possimus, natus optio laudantium necessitatibus aperiam dolor vero ea iure accusamus officiis eum hic. Architecto tempore officiis amet?</p>
+            <a href="#" class="btn">learn more</a>
+        </div>
+
+    </section>
+
+    <!--menu section starts -->
+    <section class="menu" id="menu">
+
+        <h1 class="heading">our <span>menu</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="./media/img1.jpeg" alt="">
+                <h3>tasty and healty</h3>
+                <div class="price">$15.99</div>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="./media/img22.jpg" alt="">
+                <h3>tasty and healty</h3>
+                <div class="price">$15.99</div>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="./media/img3.webp" alt="">
+                <h3>tasty and healty</h3>
+                <div class="price">$15.99</div>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="./media/img4.webp" alt="">
+                <h3>tasty and healty</h3>
+                <div class="price">$15.99</div>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="./media/img5.jpeg" alt="">
+                <h3>tasty and healty</h3>
+                <div class="price">$15.99</div>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+
+            <div class="box">
+                <img src="./media/img6.jpeg" alt="">
+                <h3>tasty and healty</h3>
+                <div class="price">$15.99</div>
+                <div class="price">$15.99 <span>20.99</span></div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
